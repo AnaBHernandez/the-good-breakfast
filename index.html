@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Urban Toast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Toast | The Good Breakfast</title>
 </head>
 
 <body>
@@ -20,9 +21,9 @@
     <main>
         <h1>The good breakfast</h1>
         <p>Here you will find all sorts of delicious treats</p>
+        
         <figure>
             <img src="https://i.postimg.cc/htxcJGB6/ZKkCecn.jpg" alt="Deliciosas tostadas de Urban Toast">
-            
             <figcaption>powered by biscuit.</figcaption>
         </figure>         
         
@@ -31,43 +32,92 @@
             An ongoing collaboration between the classroom staff and the development team 
             allow us to iterate our content and give our students the coding 
             'fruits and vegetables' -mainly made of JavaScript- that they need to 
-            grow as a healthy developer.</p>
+            grow as a healthy developer.
+        </p>
             
-            <blockquote>"Good code & good coffee, everyday"                
-            </blockquote>
+        <blockquote>"Good code &amp; good coffee, everyday"</blockquote>
         
         <section>
             <h2>Our Speciality</h2>
-            <video controls width="640" autoplay muted loop poster="https://i.postimg.cc/htxcJGB6/ZKkCecn.jpg">
-                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-                 Tu navegador no soporta vídeos de HTML5.
-            </video>
+            <figure>
+                <video controls width="640" autoplay muted loop poster="https://i.postimg.cc/htxcJGB6/ZKkCecn.jpg">
+                    <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Tu navegador no soporta vídeos de HTML5.
+                </video>
+                <figcaption>Our signature brewing process</figcaption>
+            </figure>
         </section>
-            
 
-        <h2>Our Menu</h2>
+        <section>
+    <h2>Our Menu</h2>
+    <table>
+        <caption>Selection of Beverages</caption>
+        <thead>
+            <tr>
+                <th>Coffees</th>
+                <th>Teas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Café latte</td>
+                <td>Earl Grey</td>
+            </tr>
+            <tr>
+                <td>Americano</td>
+                <td>Green Tea</td>
+            </tr>
+            <tr>
+                <td>Macchiato</td>
+                <td>Rooibos</td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>-</td> </tr>
+        </tbody>
+    </table>
+</section>
+        <section>
+            <h2>Reservas Aquí</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
 
-        <h3>Coffees</h3><ul>
-            <li>Café latte</li>
-            <li>American</li>
-            <li>Machiatto</li>
-            <li>Capuccino</li>
-        </ul>
+                <fieldset>
+                    <legend>Tipo de reserva</legend>
+                    <input type="radio" id="snack" name="type" value="snack" required />
+                    <label for="snack">Snack</label>
+                    <input type="radio" id="breakfast" name="type" value="breakfast" />
+                    <label for="breakfast">Breakfast</label>
+                </fieldset>
 
-        <h3>Teas</h3>
-        <ul>
-            <li>Earl Grey</li> <li>Green Tea</li> <li>Rooibos</li>                       
-        </ul>
-        </main>
-        <footer>
+                <p>
+                    <label for="people">Número de personas:</label>
+                    <select id="people" name="people">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </p>
+
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
         <p>From the oven with love</p>
-        </footer>
-            <address>
-                Urban Toast Bakery <br>
-                Calle del código, 2026 <br>
-                <a href="mailto:hello@urbantoast.com">hello@urbantoast.com</a>
-            </address>
-            <p>&copy; 2026 From the oven with love</p>
+        <address>
+            Urban Toast Bakery <br>
+            Calle del código, 2026 <br>
+            <a href="mailto:hello@urbantoast.com">hello@urbantoast.com</a>
+        </address>
+        <p>&copy; 2026 From the oven with love</p>
     </footer>
+
 </body>
 </html>
