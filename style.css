@@ -1,0 +1,148 @@
+/* 1. VARIABLES GLOBALES (Configuración del sistema) */
+:root {
+    --color-primario: #d2691e; /* Color tostado */
+    --color-texto: #333;
+    --color-fondo: #fdfdfd;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --espaciado: 20px;
+}
+
+/* 2. RESET Y ESTRUCTURA BASE */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--espaciado);
+}
+
+/* 3. TIPOGRAFÍA Y CABECERA */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: var(--color-primario);
+    text-align: center;
+}
+
+/* 4. MULTIMEDIA (Imágenes y Vídeo) */
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+img, video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 5. LA TABLA (Iteración 6) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 6. EL FORMULARIO (Iteración 7) */
+form {
+    background: #f4f4f4;
+    padding: var(--espaciado);
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+/* 7. FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+}
